@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div data-includeHTML="./html-common/HeaderPartial.html"></div>
+        <div id="header"></div>
     </header>
     <!-- body -->
     <div class="container rounded-bottom">
@@ -26,9 +26,7 @@
     <script>
         // Load Header
         $(document).ready(function () {
-            $("div[data-includeHTML]").each(function () {
-                $(this).load($(this).attr("data-includeHTML"));
-            });
+            $("#header").load('./html-common/HeaderPartial.html');
         });
     </script>
     <!-- script for JS functional Boostrap 5.1 do not remove must be at the bottom very important -->

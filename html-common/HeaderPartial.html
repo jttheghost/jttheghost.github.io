@@ -5,13 +5,11 @@
             <h1 class="text-center">JT Mechkowski</h1>
         </div>
     </div>
-    <div data-includeHTML="./html-common/MenuPartial.html"></div>
+    <div id="menu"></div>
     <script>
         // Load Menu
         $(document).ready(function () {
-            $("div[data-includeHTML]").each(function () {
-                $(this).load($(this).attr("data-includeHTML"));
-            });
+            $("#menu").load("./html-common/MenuPartial.html");
         });
     </script>
 </div>
